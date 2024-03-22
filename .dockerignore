@@ -1,0 +1,4 @@
+/node_modules
+# これらがあるとlinux/amd64でビルドできない
+/.yarn
+/.yarnrc.yml

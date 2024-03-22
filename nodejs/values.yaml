@@ -1,0 +1,6 @@
+replicaCount: 2
+
+image:
+  repository: suin/test
+  tag: nodejs
+  pullPolicy: Always

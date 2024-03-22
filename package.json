@@ -1,0 +1,35 @@
+{
+	"version": "0.0.0-development",
+	"description": "",
+	"keywords": [],
+	"license": "MIT",
+	"author": "suin",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./index.js",
+			"types": "./index.d.ts"
+		}
+	},
+	"files": [
+		"**/*.{js,ts,map}",
+		"!*.{test,spec}.*",
+		"!testUtils.*"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"engines": {
+		"node": ">=21.7.1"
+	},
+	"name": "@suinplayground/linode-kubernetes-nodejs",
+	"devDependencies": {
+		"@biomejs/biome": "^1.6.1",
+		"@tsconfig/node21": "^21.0.1",
+		"@tsconfig/strictest": "^2.0.3",
+		"@types/node": "^20.11.30",
+		"tsx": "^4.7.1",
+		"typescript": "^5.4.3"
+	},
+	"packageManager": "yarn@4.1.1"
+}

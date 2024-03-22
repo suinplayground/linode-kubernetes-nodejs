@@ -1,0 +1,15 @@
+[tools]
+node = "21.7.1"
+helm = "3.14.3"
+
+[tasks.build]
+run = "docker build --platform linux/amd64 -t suin/test:nodejs ."
+
+[tasks.push]
+run = "docker push suin/test:nodejs"
+
+[tasks.deploy]
+run = "helm upgrade --install nodejs ./nodejs"
+
+[tasks.undeploy]
+run = "helm uninstall nodejs"
